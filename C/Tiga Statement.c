@@ -1,7 +1,4 @@
-// Rafi Priatna
-// Arkan Amir
-// Megantara
-// Fikri Eka S
+// Membuat bilangan ganjil dengan 3 looping.
 #include <stdio.h>
 
 void main(){
