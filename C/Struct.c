@@ -36,10 +36,8 @@ void main (){
 
     // Deklarasi Variabel
     char ulang;
-    int i, jumlah_data;
+    int i, jumlah_data, akhir;
 
-    // Mulai Programnya
-    mulai: // Label untuk menandakan dimulainya program
     /*
     Membuat perulangan do while
     supaya bisa mengulang programnya jika sudah selesai
@@ -48,10 +46,16 @@ void main (){
         system("cls"); // Bersihkan layar
         puts("==========Progam Kursus==========");
         printf("Masukkan jumlah data yang diinput : ");scanf("\n%d", &jumlah_data);
-        for(i = 0; i < jumlah_data; i++){
+
+        // Mulai Programnya
+        akhir = 0; // Default untuk value awal dari variabel i
+        mulai: // Label untuk menandakan dimulainya program
+        for(i = akhir; i < jumlah_data; i++){
             // Input Blocks
             system("cls"); // Bersihkan layar
             puts("==========Progam Kursus==========");
+
+            printf("Data ke-%i", i);
             printf("\nJenis kursus yang tersedia :");
             printf("\n1. Bahasa Inggris");
             printf("\n2. Bahasa Prancis");
@@ -63,6 +67,27 @@ void main (){
             printf("Masukkan No Anggota : "); gets(my_data[i].no_anggota);
             printf("Jenis Kursus yang diinginkan (1-5) : "); scanf("%i", &my_data[i].kursus);
             fflush(stdin); // Bersihkan stdin
+
+            /*
+            Jika angka kursus yang dimasukkan tidak ada
+            Angka maksimal ada 5, karena hanya punya 5 kursus bahasa
+            Jika > 5 berarti kursusnya tidak ditemukan
+            */
+            if (my_data[i].kursus > 5){
+                system("cls"); // Bersihkan layar
+                puts("===========Progam Kursus==========");
+                printf("\nKursus tidak ditemukan!");
+                printf("\nIngin mengulangi lagi (y/n)? ");scanf("%c", &ulang);
+                // Jika ulang = Y atau ulang = Y
+                if (ulang == 'Y' || ulang == 'y'){
+                    system("cls"); // Bersihkan layar
+                    akhir = i; // Isi variabel akhir dengan perulangan for terakhir
+                    goto mulai; // Balik ke label mulai
+                // Jika ulang = selain Y atau y
+                }else{
+                    exit(main); // Exit dari fungsi main atau keluar dari program
+                } // end if
+            } // end if
         } // end for
 
         // Output Blocks
