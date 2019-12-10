@@ -54,8 +54,7 @@ void main (){
             // Input Blocks
             system("cls"); // Bersihkan layar
             puts("==========Progam Kursus==========");
-
-            printf("Data ke-%i", i);
+            printf("Data ke-%i", i+1);
             printf("\nJenis kursus yang tersedia :");
             printf("\n1. Bahasa Inggris");
             printf("\n2. Bahasa Prancis");
