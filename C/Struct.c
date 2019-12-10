@@ -68,7 +68,7 @@ void main (){
         // Output Blocks
         system("cls"); // Bersihkan layar
         for(i = 0; i < jumlah_data; i++){
-            // Memeberi pembatas
+            // Memberi pembatas
             if (i == 0){
                 // Output pertama
                 puts("===========Data Kursus==========");
