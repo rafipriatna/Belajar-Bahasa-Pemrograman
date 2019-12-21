@@ -52,6 +52,7 @@ void main(){
          *  gunakan system("clear"); jika kamu menggunakan GNU / Linux
          */
         system("clear"); // Untuk membersihkan layar
+        printf("INPUT DATA PENJUALAN RUMAH\n\n"); // Judul
         // Input blocks
         printf("Banyaknya data : ");scanf("%d", &jumlah_data);
         getchar(); // Supaya fgets dapat digunakan
@@ -61,6 +62,7 @@ void main(){
         // Perulangan sampai jumlah data
         for (i = akhir; i <= jumlah_data; i++){
             system("clear"); // Untuk membersihkan layar
+            printf("INPUT DATA PENJUALAN RUMAH\n\n"); // Judul
             printf("Data ke-%i", i);
             printf("\nNama Pembeli  : ");fgets(my_data[i].nama, 20, stdin);
             printf("Alamat          : ");fgets(my_data[i].alamat, 20, stdin);
@@ -96,6 +98,7 @@ void main(){
 
         // Output blocks
         system("clear"); // Untuk membersihkan layar
+        printf("INPUT DATA PENJUALAN RUMAH\n\n"); // Judul
         // Perulangan sampai jumlah data
         for (i = 1; i <= jumlah_data; i++){
             /* Menentukan harga rumah berasarkan tipe rumah yang diinput
