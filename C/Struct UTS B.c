@@ -67,10 +67,10 @@ void main(){
             printf("Tipe Rumah      : ");fgets(my_data[i].tipe, 20, stdin);
 
             /* Penjelasan tentang strcasecmp() ada di bawah :)
-            * Mencoba memberi pemberitahuan jika tipe rumah yang diinput tidak ada
-            * Rencanya mau pakai logika || (or), namun tidka berhasil
-            * AKhirnya, pakai if seperti ini
-            */
+             * Mencoba memberi pemberitahuan jika tipe rumah yang diinput tidak ada
+             * Rencanya mau pakai logika || (or), namun tidka berhasil
+             * AKhirnya, pakai if seperti ini
+             */
             if (strcasecmp(my_data[i].tipe, "Mawar") != 10){
                 if (strcasecmp(my_data[i].tipe, "Melati") != 10){
                     if (strcasecmp(my_data[i].tipe, "Anggrek") != 10){
@@ -88,29 +88,28 @@ void main(){
                             }else{
                                 exit(main); // Exit dari fungsi main atau keluar dari program
                             } // end if
-                        }
-                    }
-                }
-            }
-
-        }
+                        } // end if != bougenvile
+                    } // end if != anggrek
+                } // end if != melati
+            } // end if != mawar
+        } // end for
 
         // Output blocks
         system("clear"); // Untuk membersihkan layar
         // Perulangan sampai jumlah data
         for (i = 1; i <= jumlah_data; i++){
             /* Menentukan harga rumah berasarkan tipe rumah yang diinput
-            *
-            * strcasecmp() adalah fungsi untuk membandingkan string1 dan string 2 dan tidak case sensitive
-            * akan mengembalikan menjadi 0 jika nilai ASCII string1 dan string2 itu sama
-            * akan mengembalikan menjadi negatif (-1, -2 dst...) jika nilai ASCII string1 < string2
-            * akan mengembalikan menjadi positif (1, 2 dst...) jika nilai ASCII string1 > string2
-            *
-            * Dalam hal ini, saya menggunakan 10 bukan 0 untuk membandingkan string
-            * karena saya menggunakan fgets, di mana fgets tidak menghapus newline pada string
-            * sehingga didapat return 10 bukan 0
-            *
-            */
+             *
+             * strcasecmp() adalah fungsi untuk membandingkan string1 dan string 2 dan tidak case sensitive
+             * akan mengembalikan menjadi 0 jika nilai ASCII string1 dan string2 itu sama
+             * akan mengembalikan menjadi negatif (-1, -2 dst...) jika nilai ASCII string1 < string2
+             * akan mengembalikan menjadi positif (1, 2 dst...) jika nilai ASCII string1 > string2
+             *
+             * Dalam hal ini, saya menggunakan 10 bukan 0 untuk membandingkan string
+             * karena saya menggunakan fgets, di mana fgets tidak menghapus newline pada string
+             * sehingga didapat return 10 bukan 0
+             *
+             */
 
             if (strcasecmp(my_data[i].tipe, "Mawar") == 10){
                 my_data[i].harga = 500;
@@ -123,10 +122,10 @@ void main(){
             }
 
             /*
-            * Menghitung pajak dan total.
-            * Pajak = 25% dari harga
-            * Total = Harga + pajak
-            */
+             * Menghitung pajak dan total.
+             * Pajak = 25% dari harga
+             * Total = Harga + pajak
+             */
             my_data[i].pajak = 0.25 * my_data[i].harga;
             my_data[i].total = my_data[i].harga + my_data[i].pajak;
 
@@ -137,7 +136,7 @@ void main(){
             printf("\nPajak        : %2.f", my_data[i].pajak);
             printf("\nTotal        : %2.f", my_data[i].total);
             printf("\n\n");
-        }
+        } // end for
         printf("\nApakah kamu ingin mengulangi program (y/n)? ");scanf("%c", &ulang);
     } // end do
     /*
