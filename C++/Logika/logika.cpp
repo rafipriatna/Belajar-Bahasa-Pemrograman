@@ -11,7 +11,7 @@ using namespace std;
 // Program Keenam C++ Rafi
 
 int main(){
-   int a = 2;
+    int a = 2;
     int b = 6;
 
     bool hasil;
