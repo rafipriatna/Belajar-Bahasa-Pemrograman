@@ -11,26 +11,41 @@ using namespace std;
 // Program Keenam C++ Rafi
 
 int main(){
-    int a = 5;
-    int b = 5;
+   int a = 2;
+    int b = 6;
 
-   // Logika NOT
-   if (!(a == 4)){
-       // Jika a bukan 4
-       cout << "Nilai A itu 5 bukan 4" << endl;
-   }
+    bool hasil;
 
-   // Logika OR
-   if (a == 5 || b == 4){
-       // Jika a itu 5 atau b itu 4
-       cout << "A itu 5 atau B itu 4" << endl;
-   }
+    // Operator NOT
+    cout << "Operator NOT : \n";
+    hasil = !(a == b);
+    cout << hasil << endl;
 
-   // Logika AND
-   if (a == 5 && b == 5){
-       // Jika a itu 5 dan b itu 5
-       cout << "A itu 5 dan B itu 5" << endl;
-   }
+    cout << endl;
+
+    // Operator AND
+    cout << "Operator AND : \n";
+    hasil = (a == 2) && (b == 6); // Benar dan Benar
+    cout << hasil << endl;
+    hasil = (a == 2) && (b == 5); // Benar dan Salah
+    cout << hasil << endl;
+    hasil = (a == 1) and (b == 5); // Salah dan Salah
+    cout << hasil << endl;
+    hasil = (a == 1) and (b == 6); // Salah dan Benar
+    cout << hasil << endl;
+
+    cout << endl;
+
+    // Operator OR
+    cout << "Operator OR : \n";
+    hasil = (a == 2) || (b == 6); // Benar dan Benar
+    cout << hasil << endl;
+    hasil = (a == 2) || (b == 5); // Benar dan Salah
+    cout << hasil << endl;
+    hasil = (a == 1) or (b == 5); // Salah dan Salah
+    cout << hasil << endl;
+    hasil = (a == 1) or (b == 6); // Salah dan Benar
+    cout << hasil << endl;
 
     return 0;
 }
