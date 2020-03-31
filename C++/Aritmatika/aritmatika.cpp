@@ -1,14 +1,6 @@
 #include <iostream>
 
-/*
-    Nama    : Rafi Priatna K
-    NPM     : 15118760
-    Kelas   : 2KA31
-*/
-
 using namespace std;
-
-// Program Keempat C++ Rafi
 
 int main(){
     int a = 6;

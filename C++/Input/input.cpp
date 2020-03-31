@@ -1,14 +1,6 @@
 #include <iostream>
 
-/*
-    Nama    : Rafi Priatna K
-    NPM     : 15118760
-    Kelas   : 2KA31
-*/
-
 using namespace std;
-
-// Program Kedelapan C++ Rafi
 
 int main(){
     // Deklarasi Variabel
