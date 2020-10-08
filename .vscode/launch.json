@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - NilaiRerata",
+            "request": "launch",
+            "mainClass": "NilaiRerata",
+            "projectName": "Belajar-Bahasa-Pemrograman_17615f3e"
+        },
+        {
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
