@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - dataMahasisa",
+            "request": "launch",
+            "mainClass": "dataMahasisa",
+            "projectName": "Belajar-Bahasa-Pemrograman_209b5689"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program",
+            "request": "launch",
+            "mainClass": "Program",
+            "projectName": "Belajar-Bahasa-Pemrograman_209b5689"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NilaiRerata",
             "request": "launch",
             "mainClass": "NilaiRerata",
